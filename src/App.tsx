@@ -14,6 +14,7 @@ const App = () => {
       notification.open({
         message: "Welcome!",
         description: "Thanks for visiting.",
+        placement: 'bottomRight'
       });
     }
     setSomeCondition(true);

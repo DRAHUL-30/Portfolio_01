@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { DynamicPageContext, useDynamicPageContext } from "./ContextHook";
+import { DynamicPageContext } from "./ContextHook";
 
 export const DynamicPageContextProvider = ({ children }: any) => {
-  const [currentPage, setCurrentPage] = useState('ComponentA');
+  const [currentPage, setCurrentPage] = useState('Dashboard');
 
   const switchPage = (newPage: any) => {
     setCurrentPage(newPage);

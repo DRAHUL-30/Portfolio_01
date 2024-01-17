@@ -7,7 +7,7 @@ interface WrapperComponentProps {
 
 export const WrapperComponent = ({children}:WrapperComponentProps) => {
   return (
-    <div>
+    <div className='w-full p-4 space-y-4'>
       <Header />
       {children}
     </div>
