@@ -1,7 +1,7 @@
 import React from 'react';
-import { Dashboard } from "../Sections/Pages/Dashboard";
-import { Works } from "../Sections/Pages/Works";
-import { Shelf } from "../Sections/Pages/Shelf";
+import { Dashboard } from "../Sections/Pages/Dashboard/Dashboard";
+import { Works } from "../Sections/Pages/Works/Works";
+import { Shelf } from "../Sections/Pages/Shelf/Shelf";
 import { useDynamicPageContext } from "../../Context/ContextHook";
 
 export const ComponentToBeShown = () => {
@@ -26,10 +26,7 @@ export const ComponentToBeShown = () => {
   }
 
   return (
-    <div>
-      <h2>
-        <span className='text-red-600'>Title:</span> {currentPage}
-      </h2>
+    <div className='h-full'>
       {componentToRender}
     </div>
   );

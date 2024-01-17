@@ -10,6 +10,13 @@ const App = () => {
   const [someCondition, setSomeCondition] = useState(false);
 
   useEffect(() => {
+    document.body.classList.add('overflow-hidden');
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, []);
+
+  useEffect(() => {
     if (someCondition && window.navigator.onLine) {
       notification.open({
         message: "Welcome!",

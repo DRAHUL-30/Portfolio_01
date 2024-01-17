@@ -11,7 +11,7 @@ export const LeftColumn = () => {
           <span className="px-2">
             <MailFilled />
           </span>
-          {emailAddress}  
+          {emailAddress}
         </a>
         <p className="text-[16px] font-[500]">
           Dark Mode
