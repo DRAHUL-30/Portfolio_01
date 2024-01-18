@@ -2,6 +2,7 @@ import React from 'react';
 import { Dashboard } from "../Sections/Pages/Dashboard/Dashboard";
 import { Works } from "../Sections/Pages/Works/Works";
 import { Shelf } from "../Sections/Pages/Shelf/Shelf";
+import { LetsTalk } from '../Sections/Pages/Dashboard/LetsTalk/LetsTalk';
 import { useDynamicPageContext } from "../../Context/ContextHook";
 
 export const ComponentToBeShown = () => {
@@ -19,6 +20,9 @@ export const ComponentToBeShown = () => {
       break;
     case 'Shelf':
       componentToRender = <Shelf />;
+      break;
+    case 'Lets_talk':
+      componentToRender = <LetsTalk />;
       break;
     default:
       // Handle other cases or set a default component

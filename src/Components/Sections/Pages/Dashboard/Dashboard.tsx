@@ -7,7 +7,7 @@ import { Photo } from './Photo';
 export const Dashboard = () => {
   return (
     <Index>
-      <div className='flex w-[40%]'>
+      <div className='flex items-center w-[40%]'>
         <Platforms />
         <Info />
       </div>
